@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".BoxsetterActivity">
+    <item android:id="@+id/action_amalgamate"
+        android:icon="@drawable/ic_action_amalgamate"
+        android:title="@string/action_amalgamate"
+        android:visible="false"
+        app:showAsAction="ifRoom" />
+    <item android:id="@+id/action_delete"
+        android:icon="@drawable/ic_action_delete"
+        android:title="@string/action_delete"
+        app:showAsAction="ifRoom" />
+</menu>

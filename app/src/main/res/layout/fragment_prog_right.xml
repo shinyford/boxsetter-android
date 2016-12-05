@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:clickable="false"
+    android:padding="@dimen/activity_horizontal_margin"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/img"
+            android:adjustViewBounds="true"
+            android:src="@drawable/boxsetter2"
+            />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/downloaded"
+            android:src="@mipmap/ic_action_play"
+            android:background="#aaFFFFFF"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:padding="4dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/frag_text_block"
+            android:orientation="vertical"
+            android:background="#aaFFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentLeft="false"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_size"
+                android:clickable="false"
+                android:textStyle="bold"
+                android:id="@+id/title"
+                android:textColor="#ff000000"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_size"
+                android:id="@+id/notation"
+                android:textColor="#ff000000"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

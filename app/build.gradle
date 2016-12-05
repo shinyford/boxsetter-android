@@ -1,0 +1,36 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "23.0.1"
+    defaultConfig {
+        applicationId "com.boxsetter"
+        minSdkVersion 19
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:21.0.3'
+    compile 'com.squareup.picasso:picasso:2.5.0'
+    compile files('libs/nanohttpd-webserver-2.1.1-jar-with-dependencies.jar')
+    compile 'com.jaredrummler:android-device-names:1.0.7'
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile project(':Connect-SDK-Android')
+    compile 'com.github.satyan:sugar:1.5'
+}

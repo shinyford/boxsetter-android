@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name"><b>Box</b><i>Setter</i></string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search...</string>
+    <string name="pref_user_settings">User settings</string>
+    <string name="pref_summary_user_name">Enter your BBCRedux user name</string>
+    <string name="pref_title_user_name">User name</string>
+    <string name="pref_summary_redux_pass">Enter your BBCRedux password</string>
+    <string name="pref_title_redux_pass">Password</string>
+    <string name="pref_key_user_name">PREF_KEY_USER_NAME</string>
+    <string name="pref_key_redux_pass">PREF_KEY_REDUX_PASS</string>
+    <string name="pref_key_bx_pass">PREF_KEY_BX_PASS</string>
+    <string name="pref_key_advertise">PREF_KEY_BX_ADVERTISE</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_download">Download</string>
+    <string name="search_hint">Search for new boxsets...</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_update">Update</string>
+    <string name="action_amalgamate">Join seasons together</string>
+    <string name="action_cast">Find a castable device</string>
+    <string name="pref_summary_advertise">Choose whether to receive adverts or not</string>
+    <string name="pref_title_advertise">Advertising</string>
+    <string name="disconnect">Disconnect</string>
+
+</resources>

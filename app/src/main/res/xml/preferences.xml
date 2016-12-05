@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/pref_user_settings"
+        android:key="pref_key_user_settings"
+        >
+        <EditTextPreference
+            android:key="@string/pref_key_user_name"
+            android:summary="@string/pref_summary_user_name"
+            android:title="@string/pref_title_user_name"
+            />
+        <EditTextPreference
+            android:key="@string/pref_key_redux_pass"
+            android:summary="@string/pref_summary_redux_pass"
+            android:title="@string/pref_title_redux_pass"
+            android:inputType="textPassword"
+            />
+    </PreferenceCategory>
+</PreferenceScreen>

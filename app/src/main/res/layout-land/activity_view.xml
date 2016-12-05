@@ -1,0 +1,144 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="2"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/prog_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:adjustViewBounds="true"
+                    />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/downloaded"
+                    android:src="@mipmap/ic_action_play"
+                    android:background="#aaFFFFFF"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="8dp"
+                    android:visibility="invisible"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/playPosition"
+                    android:layout_centerInParent="true"
+                    android:background="#aaFFFFFF"
+                    android:textColor="#666666"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/play_position_size"
+                    android:typeface="sans"
+                    android:autoText="false"
+                    />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/prog_notation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#222"
+                android:textSize="@dimen/font_size"
+                android:padding="8dp"
+                android:paddingTop="0dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="3"
+            >
+
+            <TextView
+                android:id="@+id/prog_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#222"
+                android:textSize="@dimen/title_size"
+                android:padding="8dp"
+                android:paddingTop="0dp"
+                />
+
+            <TextView
+                android:id="@+id/prog_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_size"
+                android:textColor="#222"
+                android:padding="8dp"
+                android:paddingTop="0dp"
+                android:layout_weight="2"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/media_control_buttons"
+        >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_rewind"
+            android:id="@+id/rewind_button"
+            style="?android:attr/borderlessButtonStyle"
+            android:onClick="rewind"
+            android:visibility="invisible"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/play_pause_button"
+            style="?android:attr/borderlessButtonStyle"
+            android:onClick="playPauseVideo"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_fast_forward"
+            android:id="@+id/fast_forward_button"
+            style="?android:attr/borderlessButtonStyle"
+            android:onClick="fastForward"
+            android:visibility="invisible"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

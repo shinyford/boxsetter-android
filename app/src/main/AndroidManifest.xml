@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+    android:versionCode="1.2"
+    android:versionName="1.2"
+    package="com.boxsetter" >
+
+    <uses-sdk android:minSdkVersion="19"
+        android:targetSdkVersion="19"
+        android:maxSdkVersion="21" />
+
+    <application
+        tools:replace="android:icon"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:logo="@mipmap/ic_launcher"
+        android:theme="@style/BoxsetterAppTheme"
+        android:name="com.orm.SugarApp"
+        android:label="@string/app_name"
+        >
+
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+        <meta-data android:name="DATABASE" android:value="bx_sugar.db" />
+        <meta-data android:name="VERSION" android:value="2" />
+        <meta-data android:name="QUERY_LOG" android:value="true" />
+        <meta-data android:name="DOMAIN_PACKAGE_NAME" android:value="com.boxsetter" />
+
+        <activity android:name="com.boxsetter.BoxsetterActivity" android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.SEARCH" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
+        </activity>
+
+        <activity android:name="com.boxsetter.BoxsetterSettingsActivity" android:label="@string/app_name">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.boxsetter.BoxsetterActivity" />
+        </activity>
+
+        <activity
+            android:name="com.boxsetter.BoxsetterVideoActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
+        </activity>
+
+        <activity android:name="com.boxsetter.BoxsetterViewActivity" android:label="@string/app_name">
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+</manifest>
